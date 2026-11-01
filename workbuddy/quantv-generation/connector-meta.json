@@ -1,0 +1,15 @@
+{
+  "name": "QuantV 图片与语音",
+  "name_zh": "QuantV 图片与语音",
+  "name_en": "QuantV Image & Speech",
+  "description": "使用 QuantV 账号生成图片和中文语音，查询生成任务并获取作品下载链接。支持参考图与音色选择，消耗账号现有积分。",
+  "description_zh": "使用 QuantV 账号生成图片和中文语音，查询生成任务并获取作品下载链接。支持参考图与音色选择，消耗账号现有积分。",
+  "description_en": "Generate images and speech with your QuantV account, choose reference images and voices, and retrieve result links using your account credits.",
+  "source": "quantv-generation",
+  "type": "mcp",
+  "auth_mode": "token",
+  "version": "0.2.6",
+  "minWorkbuddyVersion": "5.0.0",
+  "examples_zh": ["生成一张 16:9 的咖啡新品海报，不要文字", "列出可用音色，再把这段文案生成语音：欢迎来到米核 AI", "查询刚才生成任务的进度，完成后给我下载链接"],
+  "examples_en": ["Generate a 16:9 coffee launch poster without text", "List available voices, then turn this text into speech: Welcome to QuantV", "Check my generation task and give me the result link when ready"]
+}

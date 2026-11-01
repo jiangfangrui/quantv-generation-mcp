@@ -1,0 +1,22 @@
+{
+  "title": "连接 QuantV 账号",
+  "title_en": "Connect your QuantV account",
+  "description": "请先登录 aigc.quantv.com，再填写该站点 Local Storage 中的 token。WorkBuddy 将输入保存在本机 ~/.workbuddy；MCP 将刷新后的凭证保存在本机 QuantV 数据目录，用于重启恢复。凭证仅发往 QuantV，不上传到 GitHub。生成内容消耗账号积分。",
+  "description_en": "Sign in to aigc.quantv.com and copy token from its Local Storage. WorkBuddy stores form values locally in ~/.workbuddy; MCP caches rotated credentials in your local QuantV data folder. Credentials are sent only to QuantV, never GitHub. Generation uses account credits.",
+  "docUrl": "https://github.com/jiangfangrui/quantv-generation-mcp/blob/main/TOKEN-GUIDE.md",
+  "docLabel": "如何获取 Token 与清理本地凭证",
+  "fields": [
+    {
+      "key": "QUANTV_ACCESS_TOKEN", "label": "Access Token（必填）", "label_en": "Access Token (required)",
+      "type": "password", "required": true,
+      "placeholder": "粘贴 Local Storage 中 token 的值",
+      "description": "从 https://aigc.quantv.com 获取；不要填写账号密码，也不要分享给他人。"
+    },
+    {
+      "key": "QUANTV_REFRESH_TOKEN", "label": "Refresh Token（建议填写）", "label_en": "Refresh Token (recommended)",
+      "type": "password", "required": false,
+      "placeholder": "粘贴 Local Storage 中 refreshToken 的值",
+      "description": "用于 Access Token 过期后自动刷新；不填时，访问令牌过期后需要手动重新连接。"
+    }
+  ]
+}

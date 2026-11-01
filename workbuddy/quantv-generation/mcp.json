@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "quantv-generation": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["--yes", "--ignore-scripts", "--package=https://github.com/jiangfangrui/quantv-generation-mcp/releases/download/v0.2.6/quantv-generation-mcp-0.2.6.tgz", "quantv-generation-mcp"],
+      "runtime": { "type": "node", "version": "20" },
+      "timeout": 60000,
+      "env": {
+        "QUANTV_ACCESS_TOKEN": "${QUANTV_ACCESS_TOKEN}",
+        "QUANTV_REFRESH_TOKEN": "${QUANTV_REFRESH_TOKEN}"
+      },
+      "staticEnv": {
+        "QUANTV_BASE_URL": "https://aigc.quantv.com",
+        "QUANTV_CLIENT_PROFILE": "workbuddy"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "quantv-generation-mcp",
+  "version": "0.2.6",
+  "private": true,
+  "type": "module",
+  "description": "QuantV image and speech generation MCP for WorkBuddy",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "quantv-generation-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "README.md",
+    "TOKEN-GUIDE.md",
+    "THIRD_PARTY_NOTICES.txt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiangfangrui/quantv-generation-mcp.git"
+  }
+}
