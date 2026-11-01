@@ -1,8 +1,8 @@
 {
-  "title": "连接 QuantV 账号",
-  "title_en": "Connect your QuantV account",
-  "description": "请先登录 aigc.quantv.com，再填写该站点 Local Storage 中的 token。WorkBuddy 将输入保存在本机 ~/.workbuddy；MCP 将刷新后的凭证保存在本机 QuantV 数据目录，用于重启恢复。凭证仅发往 QuantV，不上传到 GitHub。生成内容消耗账号积分。",
-  "description_en": "Sign in to aigc.quantv.com and copy token from its Local Storage. WorkBuddy stores form values locally in ~/.workbuddy; MCP caches rotated credentials in your local QuantV data folder. Credentials are sent only to QuantV, never GitHub. Generation uses account credits.",
+  "title": "连接 QuanTV 账号",
+  "title_en": "Connect your QuanTV account",
+  "description": "请先登录 aigc.quantv.com，再填写该站点 Local Storage 中的 token。WorkBuddy 将输入保存在本机 ~/.workbuddy；MCP 将刷新后的凭证保存在本机 QuanTV 数据目录，用于重启恢复。凭证仅发往 QuanTV，不上传到 GitHub。生成内容消耗账号积分。",
+  "description_en": "Sign in to aigc.quantv.com and copy token from its Local Storage. WorkBuddy stores form values locally in ~/.workbuddy; MCP caches rotated credentials in your local QuanTV data folder. Credentials are sent only to QuanTV, never GitHub. Generation uses account credits.",
   "docUrl": "https://github.com/jiangfangrui/quantv-generation-mcp/blob/main/TOKEN-GUIDE.md",
   "docLabel": "如何获取 Token 与清理本地凭证",
   "fields": [

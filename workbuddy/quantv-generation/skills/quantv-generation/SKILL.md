@@ -1,12 +1,12 @@
 ---
 name: quantv-generation
-display_name: QuantV 图片与语音
-display_name_en: QuantV Image & Speech
-description: 使用 QuantV 生成图片、参考图改图、文本转语音、选择音色，查询生成任务并获取作品链接。
-description_zh: 使用 QuantV 账号积分生成图片和语音，查询任务与结果链接。
-description_en: Generate images and speech with QuantV account credits, select voices, and retrieve task results.
-version: 0.2.6
-author: QuantV
+display_name: 米核2.0图片与语音生成
+display_name_en: Mihe 2.0 Image & Speech Generation
+description: 使用aigc.quantv.com账号生成图片和中文语音，查询生成任务并获取作品下载链接。支持参考图与音色选择，消耗账号现有积分。
+description_zh: 使用aigc.quantv.com账号生成图片和中文语音，查询生成任务并获取作品下载链接。支持参考图与音色选择，消耗账号现有积分。
+description_en: Generate images and Chinese speech with your aigc.quantv.com account, check tasks, and get download links. Supports reference images and voice selection; uses existing account credits.
+version: 0.2.7
+author: QuanTV
 examples_zh:
   - "生成一张 16:9 的咖啡新品海报，不要文字"
   - "先列出音色，再将文案生成语音"
@@ -15,7 +15,7 @@ examples_en:
   - "List voices, then turn my text into speech"
 ---
 
-# QuantV 图片与语音
+# 米核2.0图片与语音生成
 
 需要用户已在连接器设置中填写自己的 Token。用户未明确要求生成时，查询模型、音色或任务即可，不发起扣积分的生成。不要要求用户在对话中发送 Token、密码，不读取其浏览器凭证。
 
@@ -26,7 +26,7 @@ examples_en:
 - 本连接器生成工具的 `wait` 仅允许 `false`，缺省也是 `false`。不调用 `quantv_wait_task`，该工具在此版本不提供。
 - 查询若为 `pending` 或 `processing`，说明任务仍在执行。可间隔约 5 秒查询，单次对话最多连续查询 6 次；仍未完成就告知任务 ID，用户继续查询时沿用它。
 - `completed` 时提供 `resultUrls` 中的作品链接；`failed` 或 `refunded` 时说明状态和返回错误，不自动重新生成。
-- 图片和语音均使用用户现有积分；当前价格以 QuantV 网站显示为准，不承诺固定费用。
+- 图片和语音均使用用户现有积分；当前价格以 QuanTV 网站显示为准，不承诺固定费用。
 
 ## 工具与参数
 

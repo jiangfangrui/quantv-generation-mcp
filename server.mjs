@@ -22080,7 +22080,7 @@ function configureWorkbuddy(config3, dataDir = workbuddyDataDir()) {
 var workbuddy = process.env.QUANTV_CLIENT_PROFILE === "workbuddy";
 var config2 = workbuddy ? configureWorkbuddy(loadConfig()) : loadConfig();
 var client = new QuantvClient(config2);
-var server = new McpServer({ name: "quantv-generation-mcp", version: "0.2.6" });
+var server = new McpServer({ name: "quantv-generation-mcp", version: "0.2.7" });
 function result(value) {
   return {
     content: [{ type: "text", text: JSON.stringify(value, null, 2) }],

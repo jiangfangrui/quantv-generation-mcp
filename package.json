@@ -1,9 +1,9 @@
 {
   "name": "quantv-generation-mcp",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "private": true,
   "type": "module",
-  "description": "QuantV image and speech generation MCP for WorkBuddy",
+  "description": "QuanTV image and speech generation MCP for WorkBuddy",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20"
